@@ -1,0 +1,238 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>当当</title>
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<style>
+*{margin:0;padding:0; list-style:none;}
+a{ text-decoration:none;}
+html{font-size:20px;}
+.box{width:100%; overflow:hidden; height:83rem;}
+i{ font-style:normal;}
+body{ background:#f0f0f0;}
+
+.box header{ width:15.2rem; position:relative; top:0rem;left:50%; margin-left:-7.6rem; padding:0.5rem;}
+.box header img.hd-dt{ width:4.25rem; height:1.2rem; float:left;}
+.box header .hd-left a img{ width:1.1rem; height:1rem; float:right; margin-right:0.5rem;}
+.box header .hd-left{ margin-right:0.5rem;}
+.banner{width:15.2rem; height:6.25rem; position:relative; top:0rem;left:0; left:50%;margin-left:-7.6rem;  overflow:hidden;}
+.banner ul{position:absolute; top:0.5rem; left:0;}
+.banner ul li{width:16rem; height:6.675rem; float:left;}
+.banner ul li img{width:100%;}
+.banner ol{position:absolute; left:50%; bottom:0.375rem; width:3rem; margin-left:-1.5rem;}
+.banner ol li{width:0.25rem; height:0.25rem; margin:0 0.125rem; background:#fff; border-radius:50%; float:left; text-indent:-99999px;}
+.banner ol li.active{background:#472a22;}
+.download{ position:relative; top:0.5rem;left:50%; margin-left:-7.6rem;}
+.download .advertisement{ width:15.2rem; height:1.5rem; position:absolute; top:0;left:0;}
+.download div{ width:15.2rem; height:2rem;; position:absolute; top:2rem;left:0;}
+.download div input{ width:12.175rem; height:2rem;border:0.05rem solid #fe9600; box-sizing:border-box; float:left; font-size:0.65rem; padding-left:0.5rem; color:#a7a7a7; margin-bottom:0.2rem;}
+.download div a{ width:3rem; height:2rem;float:left; text-align:center; line-height:2rem;}
+.orange{ background:#fe9600; }
+.download div a img{ width:1.2rem; height:1.2rem; text-align:bottom; line-height:2rem; padding-top:0.4rem;}
+.download div ul{ width:10.25rem; height:1.75rem; margin:0 auto;}
+.download div ul li{ float:left; font-size:0.65rem; color:#a7a7a7; line-height:1.75rem; text-align:bottom; width:2.05rem;}
+
+.navigation{ width:15.2rem; height:4.75rem;display:-webkit-flex; display:flex; padding-top:0.5rem;}
+.navigation li{-webkit-flex:1; flex:0.25;}
+.navigation li a p{font-size:0.65rem; color:#a7a7a7; line-height:1rem; text-align:center; padding-top:1.7rem;}
+.navigation li a img{ width:3rem; height:3rem;}
+
+.advertisement2{ width:100%; height:1.52rem; position:relative; top:9.5rem; left:0;}
+.hot{ position:relative; top:0; left:0;}
+.hot ul{ position:absolute; top:16rem; width:15.2rem; height:7.25rem; left:50%; margin-left:-50%;display:-webkit-flex; display:flex;}
+.hot ul li img{ width:7.25rem; height:7.25rem;}
+.gray{ font-size:0.7rem; color:#979797;}
+.red{ color:#c00000; font-size:0.55rem;}
+.hot ul li{-webkit-flex:1; flex:1;}
+.hot .hot-bottom{ position:absolute; left:0; top:24rem;width:15.2rem;}
+.hot .hot-bottom p{ height:1.95rem; border-top:0.025rem solid #e5e5e5;line-height:1.95rem; padding-left:0.5rem;}
+.hot .hot-bottom p span{ float:right; padding-right:0.5rem;}
+.hot-center div{position:relative; left:0; top:28.5rem;}
+.hot-center div .pink{width:100%;height:1.5rem; top:0; left:0; position:absolute;}
+.hot-center div div{ position:absolute; left:0; top:1.5rem;}
+.hot-center div div img{ width:15.2rem; height:7rem;vertical-align:bottom;vertical-align:middle;vertical-align:top;
+vertical-align:bottom;}
+
+.nav-center{ position:relative; left:0; top:49.5rem; width:15.2rem; }
+.nav-center ul{width:15.2rem;position:absolute; left:50%; top:0;margin-left:-7.6rem;}
+.nav-center ul li{ width:4.625rem; height:1.425rem; border-radius:0.1rem; background:#FFF; float:left; font-size:0.65rem; color:#8c8c8c; line-height:1.425rem; text-align:center; margin-right:0.4rem; margin-bottom:0.4rem;}
+.nav-center .hot-bottom{ position:absolute; top:4rem; left:0}
+.nav-center .hot-bottom p{height:1.95rem; border-top:0.025rem solid #e5e5e5;line-height:1.95rem; padding-left:0.5rem;}
+.nav-center .hot-bottom span{ float:right; margin-right:0.5rem;}
+.red-left{ color:#edb05e;}
+.nav-center .navigation2{ position:absolute; top:8.5rem; left:0;}
+.navigation2 li a p{ padding-top:0.3rem; width:3.2rem; line-height:0.7rem; text-align:center; font-size:0.6rem;}
+
+.footer{ position:relative; top:62rem; left:0;}
+.footer .btn{ width:100%; height:6.7rem; background:#e0e0e0;}
+.ashen{ background:#b0b0b0;}
+.footer .btn .pale{border:0.05rem solid #b0b0b0;}
+.footer .btn{ padding-top:0.5rem; padding-left:0.2rem;}
+.footer .kind{ position:absolute; top:4.5rem; left:0;}
+.footer .kind ul{ width:10.5rem; margin-left:2.5rem;display:-webkit-flex; display:flex;}
+.footer .kind ul li{-webkit-flex:1; flex:0.3333; text-align:center; line-height:}
+.footer .hoot-bottom{position:absolute; left:0; top:7rem;}
+.footer .hoot-bottom div{ width:16rem; height:1.5rem;background:#b0b0b0;}
+.footer .hoot-bottom div p{ padding-left:0.5rem; font-size:0.6rem; line-height:1.5rem; color:#fff;}
+.foot-span{ float:right; padding-right:1rem;}
+.hoot-bottom div p i{ background:url(img/foot.png) no-repeat center;width:0.65rem; height:0.9rem; padding-right:0.5rem;}
+</style>
+<script>
+window.onload=window.onresize=function(){
+	document.documentElement.style.fontSize=document.documentElement.clientWidth*20/320+'px';
+	var oUl = document.querySelector('.banner ul');
+	var aLi = oUl.children;
+	oUl.style.width = aLi.length*aLi[0].offsetWidth/20+'rem';
+};
+</script>
+
+</head>
+
+<body>
+<div class="box">
+	<header>
+        <img src="img/head_1.png" alt="当当网" class="hd-dt"/></li>
+        <div class="hd-left">
+        	<a href="javascript:;"><img src="img/header_3.png"></a>
+            <a href="javascript:;"><img src="img/header_2.png"></a>
+            <a href="javascript:;"><img src="img/header_1.png"></a>
+        </div>
+	</header>
+	<section class="banner">
+		<ul>
+			<li><a href="javascript:;"><img src="img/banner.png"/></a></li>
+			<li><a href="javascript:;"><img src="img/banner.png" /></a></li>
+			<li><a href="javascript:;"><img src="img/banner.png" /></a></li>
+			<li><a href="javascript:;"><img src="img/banner.png" /></a></li>
+			<li><a href="javascript:;"><img  src="img/banner.png" /></a></li>
+			<li><a href="javascript:;"><img  src="img/banner.png" /></a></li>
+		</ul>
+        <ol>
+			<li class="active">0</li>
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+			<li>4</li>
+			<li>4</li>
+		</ol>
+	</section>
+    	<div class="download">
+        	<img class="advertisement"src="img/download.png"/>
+        <div>
+        	<input type="text" value="尾品会" id="text"/>
+            <a href="javascript:;" class="orange"><img src="img/soso.png" alt=""/></a>
+            <ul>
+            	<li>图书</li>
+                <li>母婴</li>
+                <li>童装</li>
+                <li>美妆</li>
+                <li>家居</li>
+            </ul>
+            <ul>
+            	<li>服装</li>
+                <li>鞋靴</li>
+                <li>箱包</li>
+                <li>运动</li>
+                <li>更多</li>
+            </ul>
+            <ol class="navigation">
+                <li>
+                    <a href="javascript:;"><img src="img/1_09.png"alt=""/></a>
+                    <a href="javascript:;"><p>我的订单</p></a>
+                </li>
+                <li>
+                    <a href="javascript:;"><img src="img/1_11.png"alt=""/></a>
+                    <a href="javascript:;"><p>我的优惠</p></a>
+                </li>
+                <li>
+                    <a href="javascript:;"><img src="img/1_13.png" alt=""/></a>
+                    <a href="javascript:;"><p>口袋服务</p></a>
+                </li>
+                <li>
+                    <a href="javascript:;"><img src="img/1_15.png"alt=""/></a>
+                    <a href="javascript:;"><p>浏览历史</p></a>
+                </li>
+            </ol>
+            <div><img class="advertisement2"src="img/1_21.png" alt=""/></div>
+        </div>
+        <section class="hot">
+        	<ul>
+            	<li><img src="img/dangdang.png"/></li>
+                <li><img src="img/dangdang_26.png"/></li>
+            </ul>
+            <div class="hot-bottom">
+            	<p class="gray">桌面迷你小太阳取暖器2档调<span class="red">￥29.00</span></p>
+            	<p class="gray" style="border-bottom:0.025rem solid #e5e5e5;">LOCK&LOCK乐扣 普通套型<span class="red">￥69.00</span></p>
+            </div>
+        </section>
+        <section class="hot-center">
+        	<div>
+            	<img class="pink"src="img/1_22.png" alt=""/>
+                <div>
+                    <img class="hot-img"src="img/1_31.png" alt=""/>
+                    <img class="hot-img" src="img/当当_32.png" alt=""/>
+                    <img class="hot-img" src="img/1_34.png" alt=""/>
+                </div>
+            </div>
+        </section>
+        <section class="nav-center">
+        	<ul>
+            	<li>男装</li>
+                <li>女装</li>
+                <li>鞋</li>
+                <li>户外运动</li>
+                <li>箱包礼品</li>
+            </ul>
+            <div class="hot-bottom">
+            	<p class="gray">笛纱童装 每个女孩都是公主<span class="red-left">2.2折</span></p>
+            	<p class="gray" style="border-bottom:0.025rem solid #e5e5e5;">亚都净化专场 全国包邮4.9折<span class="red-left">3.0折</span></p>
+            </div>
+			<ol class="navigation navigation2">
+                <li>
+                    <a href="javascript:;"><img src="img/1_37.png"alt=""/></a>
+                    <a href="javascript:;"><p>手机充值</p></a>
+                </li>
+                <li>
+                    <a href="javascript:;"><img src="img/1_39.png"alt=""/></a>
+                    <a href="javascript:;"><p>元宝福利</p></a>
+                </li>
+                <li>
+                    <a href="javascript:;"><img src="img/1_41.png" alt=""/></a>
+                    <a href="javascript:;"><p>当当客户端</p></a>
+                </li>
+                <li>
+                    <a href="javascript:;"><img src="img/1_43.png"alt=""/></a>
+                    <a href="javascript:;"><p>读书客户端</p></a>
+                </li>
+            </ol>
+        </section>
+        <footer class="footer">
+        	<div class="btn">
+        		<input type="text" value="请输入商品名称" id="text" class="pale"/>
+            	<a href="javascript:;" class="ashen"><img src="img/soso2.png" alt=""/></a>
+            </div>
+            <div class="kind">
+                <ul>
+                    <li>精简版</li>
+                    <li>触屏版</li>
+                    <li>电脑版</li>
+                </ul>
+                <ul>
+                    <li>提建议</li>
+                    <li>客&nbsp;服</li>
+                    <li>帮&nbsp;助</li>
+                </ul>
+            </div>
+            <div class="hoot-bottom">
+            	<div>
+            		<p>登录&nbsp;&nbsp;&nbsp;注册<span class="foot-span"><i></i>TOP</span></p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+
+</div>
+</body>
+</html>

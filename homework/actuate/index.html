@@ -1,0 +1,293 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>驱动之家</title>
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<style>
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+a{
+	text-decoration:none;
+	color: #585858;
+}
+
+html {
+	font-size: 20px;
+}
+
+body{
+	font-family: "microsoft yahei";
+}
+
+.red{
+	color: #d51942;
+}
+header{
+	background: #d70302;
+	height: 2.2rem;
+	position: relative;
+	box-shadow: 0 2px 3px #999;
+}
+.logo{
+	 background:url(images/logo.png) no-repeat;
+	background-size: 100%;
+	width: 5.375rem;
+	height: 1.6rem;
+	position: absolute;
+	top: 0.25rem;
+	left: 0.8rem;
+}
+header span{
+	font-size: 0.8rem;
+	color: #FFF;
+	position: absolute;
+	top: 0.5rem;
+	right: 1.5rem;
+}
+nav{
+	height: 1.75rem;
+	padding: 0 0.4rem;
+}
+nav ul{
+	display: flex;
+	display: -webkit-flex;
+	padding: 0.3rem 0;
+}
+nav ul li{
+	flex: 1;
+	-webkit-flex: 1;
+	font-size: 0.7rem;
+	line-height: 1.15rem;
+	text-align: center;
+	color: #2d2d2d;
+	box-sizing: border-box;
+}
+nav ul li.on{
+	border: 1px solid #d1010e;
+	background: #fef2f2;
+	color: #d1010e;
+}
+.banner{
+	width: 16rem;
+	height: 8rem;
+	overflow: hidden;
+	position: relative;
+}
+.banner ul li{
+	width: 16rem;
+	height: 8rem;
+	position: relative;
+}
+.banner ul li p{
+	height: 1.25rem;
+	line-height: 1.25rem;
+	background: rgba(0,0,0,.5);
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 15.5rem;
+	color: #FFF;
+	font-size: 0.6rem;
+	padding-left: 0.5rem;
+}
+.banner ul li img{
+	width: 16rem;
+	height: 8rem;
+}
+.banner ol{
+	position: absolute;
+	right: 0.75rem;
+	bottom: 0.25rem;
+}
+.banner ol li{
+	height: 0.25rem;
+	width: 0.25rem;
+	background: #adacb1;
+	display: inline-block;
+}
+.banner ol li.on{
+	background: #FFF;
+}
+.main_list ul li{
+	padding: 0.55rem;
+	border-bottom: 1px solid #ccc;
+}
+.main_list ul li p{
+	font-size: 0.875rem;
+	line-height: 1.2rem;
+}
+.list_bottom{
+	position: relative;
+	color: #999999;
+	font-size: 0.6rem;
+	margin-top: 0.4rem;
+}
+.list_bottom a{
+	background: url(images/xx.png) no-repeat right center;
+	height: 0.85rem;
+	padding-right: 1rem;
+	background-size: 50%;
+	position: absolute;
+	top: 0;
+	right: 0.8rem;
+}
+.list_img{
+	overflow:hidden;
+}
+.list_img_ls{
+	float: left;
+	width: 50%;
+	box-sizing: border-box;
+	padding: 0.55rem;
+}
+.main_list ul li .list_img_ls p{
+	font-size: 0.675rem;
+	text-align: center;
+}
+.list_img_ls img{
+	width: 100%;
+}
+.next{
+	display: block;
+	line-height: 1.5rem;
+	text-align: center;
+}
+footer{
+	background: #eeeeee;
+	border-top: 1px solid #d8d8d8;
+	margin-top: 0.5rem;
+	padding-bottom: 0.8rem;
+}
+footer p{
+	color: #5f5f5f;
+	padding-top: 0.75rem;
+	text-align: center;
+	font-size: 0.8rem;
+}
+footer p a{
+	font-size: 0.8rem;
+	display: inline-block;
+	margin: 0 0.2rem;
+}
+
+</style>
+<script>
+window.onload=window.onresize=function(){
+	document.documentElement.style.fontSize=document.documentElement.clientWidth*20/320+'px';
+};
+</script>
+
+</head>
+
+<body>
+<div class="box">
+	<header>
+		<div class="logo"></div>
+		<span>传统版</span>
+	</header>
+	<nav>
+		<ul>
+			<li class="on">全部</li>
+			<li>硬件</li>
+			<li>软件</li>
+			<li>手机</li>
+			<li>科技</li>
+		</ul>
+	</nav>
+	<section class="banner">
+		<ul>
+			<li>
+				<img src="images/img1.png">
+				<p>如此逆天的Androd平板你知道吗？</p>
+			</li>
+		</ul>
+		<ol>
+			<li class="on"></li>
+			<li></li>
+			<li></li>
+		</ol>
+	</section>
+	<section class="main_list">
+		<ul>
+			<li>
+				<p>金发美女+比基尼在零重力下的诱惑</p>
+				<div class="list_bottom">
+					<span>筱筱</span> | 
+					<span>5分钟前</span>
+					<a href="#">2</a>
+				</div>
+			</li>
+			<li>
+				<p>三星入门4G手机续航测试：秒掉Nexus5</p>
+				<div class="list_bottom">
+					<span>小呆</span> | 
+					<span>2小时前</span>
+					<a href="#">2</a>
+				</div>
+			</li>
+			<li>
+				<p>PSV版《生化奇兵》到底还有木有了？</p>
+				<div class="list_bottom">
+					<span>筱筱</span> | 
+					<span>2小时前</span>
+					<a href="#">4</a>
+				</div>
+			</li>
+			<li>
+				<p>苏宁架构大调：设八大直属独立公司</p>
+				<div class="list_bottom">
+					<span>筱筱</span> | 
+					<span>3小时前</span>
+					<a href="#">12</a>
+				</div>
+			</li>
+			<li>
+				<p class="red">百度薅羊毛继续：一分钱换迅雷白金会员</p>
+				<div class="list_bottom">
+					<span>筱筱</span> | 
+					<span>5分钟前</span>
+					<a href="#">42</a>
+				</div>
+			</li>
+			<li>
+				<div class="list_img">
+					<div class="list_img_ls">
+						<img src="images/img01.png">
+						<p>触目惊心  揭秘iPhone翻新全过程</p>
+					</div>
+					<div class="list_img_ls">
+						<img src="images/img02.png">
+						<p>东芝消费级5TB硬盘突然上市，真便宜</p>
+					</div>
+				</div>
+				<p>真正有生命的鞋子：活体细胞合成材料制成</p>
+				<div class="list_bottom">
+					<span>筱筱</span> | 
+					<span>5小时前</span>
+					<a href="#">12</a>
+				</div>
+			</li>
+			<li>
+				<p>做工如何？神州899元5寸四核机大拆解</p>
+				<div class="list_bottom">
+					<span>筱筱</span> | 
+					<span>5小时前</span>
+					<a href="#">12</a>
+				</div>
+			</li>
+		</ul>
+		<a href="#" class="next">【下一页】</a>
+	</section>
+	<footer>
+		<p><a href="#">pad版</a> | <a href="#">触摸版</a> | <a href="#">传统版</a></p>
+		<p style="font-size: 0.6rem;">京ICP备 11024344号-7 驱车之家 京公网安</p>
+	</footer>
+</div>
+	
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Guokr</title>
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<style>
+*{margin:0;padding:0; list-style:none;}
+a{ text-decoration:none;}
+html{font-size:20px;}
+.box{width:100%;overflow:hidden;}
+i{ font-style:normal;}
+.gray{ color:#909090; font-size:0.75rem;}
+.black{ color:#000000; font-size:0.7rem;}
+.box header{ width:100%; height:2.25rem; background:#262626; position:relative; top:0; left:0; border-bottom:0.1rem solid #76b5aa;}
+.box header img{ width:6.45rem; height:1.25rem; margin:0 auto; position:absolute; left:50%; top:0.4rem; margin-left:-3.225rem;}
+.box header i{ background:url(img/head_1.png) no-repeat center; width:1.75rem; height:1.5rem; padding-right:1.5rem; text-align:center; line-height:2.25rem; margin-left:0.4rem; margin-top:0.4rem;}
+.box header span{ background:url(img/head_2.png) no-repeat center;width:1.85rem; height:1.5rem; padding-right:1.55rem; text-align:center; line-height:2.25rem;  float:right; margin-right:0rem; margin-top:0.4rem;}
+.hd-login{display:-webkit-flex; display:flex;height:2.1rem; width:16rem; background:#fafafa;}
+.box .hd-login span{-webkit-flex:1; flex:0.5; width:8rem;height:1.55rem;line-height:1.55rem; text-align:center;}
+.hd-login span .log{ background:url(img/head_3.png) no-repeat center; width:1.55rem; height:1.55rem; padding-right:2.05rem; }
+.hd-login .gray{ border-right:0.05rem solid #c4c4c4; margin-top:0.25rem;}
+.hd-login span .sign{ background:url(img/head_4.png) no-repeat center; width:1.55rem; height:1.55rem; padding-right:2.05rem; }
+.hd-login span.gray-none{ border:none;}
+
+.banner{width:16rem; height:7.8rem;overflow:hidden;}
+.banner ul li{width:16rem; height:7.8rem; float:left;}
+.banner ul li img{width:100%;}
+
+.center ul li{ width:16rem; height:2rem; line-height:2rem; border-bottom:0.025rem solid #ececec; padding-left:0.375rem;}
+.center ul li.blue{ border-bottom:0.1rem solid #58c1b0;}
+.answer p{ width:16rem; height:2rem; background:#fafafa; border-bottom:0.025rem solid #ececec; padding-left:0.375rem; line-height:2rem; }
+.answer p span{ width:1.5rem; height:1.5rem; background:url(img/head_5.png) no-repeat center; padding-right:2rem; float:right; margin-top:0.2rem;}
+.answer ul{display:-webkit-flex; display:flex; width:16rem; height:2rem; border-bottom:0.025rem solid #ececec; text-align:center; line-height:2rem; font-size:0.7rem;}
+.answer ul li{-webkit-flex:1; flex:0.2;}
+.red-bottom{ border-bottom:0.05rem solid #a95062; text-align:left; padding-left:0.375rem;}
+.answer .instrumental{ background:none; border-bottom:none; font-size:0.7rem;}
+.matter{ padding-left:0.375rem;display:-webkit-flex; display:flex;}
+.matter img{ width:5.25rem; height:3.75rem;-webkit-flex:1; flex:0.3333;}
+.matter div{-webkit-flex:1; flex:0.6666; width:8.75rem; height:3.7rem; margin-left:0.375rem;}
+.matter div div{ font-size:0.6rem; line-height:1.2333rem; text-align:left;color:#87868b;}
+.center .center-result{ margin-top:0.5rem;}
+.center .center-result .first{ text-align:bottom; border-top:0.025rem solid #ececec;}
+.center .center-result li.center-foot{ line-height:2.35rem; text-align:center; background:#fafafa; padding-bottom:0.5rem;}
+.center .center-result li.center-foot span{ width:1.5rem; height:1.5rem; background:url(img/foot.png) no-repeat center; padding-right:1.5rem; }
+.footer{ background:#262626; color:#b0b0b0; border-bottom:0.025rem solid #272727;}
+.footer span .log2{ background:url(img/foot-1.png) no-repeat center; width:1.55rem; height:1.55rem; padding-right:1.7rem;}
+.footer span .sign2{ background:url(img/foot-2.png) no-repeat center; width:1rem; height:1.55rem; padding-right:1.2rem;}
+</style>
+<script>
+window.onload=window.onresize=function(){
+	document.documentElement.style.fontSize=document.documentElement.clientWidth*20/320+'px';
+	var oUl = document.querySelector('.banner ul');
+	var aLi = oUl.children;
+	oUl.style.width = aLi.length*aLi[0].offsetWidth/20+'rem';
+};
+</script>
+
+</head>
+
+<body>
+<div class="box">
+	<header>
+    	<i></i>
+        <img src="img/head_c.png" alt="Guokr"/>
+        <span></span>
+    </header>
+    <section class="hd-login">
+		<span class="gray"><i class="log"></i>用户登录</span>
+        <span class="gray gray-none"><i class="sign"></i>用户注册</span>        
+    </section>
+	<section class="banner">
+		<ul>
+			<li><a href="javascript:;"><img src="img/bnner.png" /></a></li>
+			<li><a href="javascript:;"><img src="img/bnner.png" /></a></li>
+			<li><a href="javascript:;"><img src="img/bnner.png" /></a></li>
+			<li><a href="javascript:;"><img src="img/bnner.png" /></a></li>
+		</ul>
+    </section>
+    <section class="center">
+    	<ul>
+        	<li class="black">解读科学观点时，你应该知道的20个...</li>
+            <li class="black">运动出汗，更好来判断</li>
+        	<li class="black">“关掉”旧习惯，本性难易</li>
+            <li class="black">男女搭配，破案不累</li>
+        	<li class="black">腰窝，性感无误？</li>
+            <li class="black">有7000多种语言，就有7000多个“平行</li>
+        	<li class="black blue">久坐杀精--今天，你坐了多久</li>
+        </ul>
+    </section>
+    <section class="answer">
+    	<p class="black">热门问答<span></span></p>
+        <ul>
+        	<li class="red-bottom">科技</li>
+            <li>生活</li>
+            <li>人文</li>
+            <li>自然</li>
+            <li></li>
+        </ul>
+        <p class="instrumental">如果把探测器撞到彗星上会怎么样?</p>
+        <div class="matter">
+        	<img src="img/center_1.png" alt=""/>
+            <div>
+            	<div>撞上去的事人们已经干过了。。深度撞击号（英语：Deep Impact）是美国国家</div>
+            </div>
+        </div>
+
+        
+    </section>
+    <section class="center">
+    	<ul class="center-result">
+        	<li class="black first">这个“肥皂放入牛奶”的效果怎么生产...</li>
+            <li class="black">制造出大于全幅画的感光元件有意义吗？</li>
+        	<li class="black">磁场是运动的电场吗</li>
+            <li class="black blue">什么函数能描述你的人生</li>
+        </ul>
+    </section>
+    <section class="answer">
+    	<p class="black">热门问答<span></span></p>
+        <ul>
+        	<li class="red-bottom">科技</li>
+            <li>生活</li>
+            <li>人文</li>
+            <li>自然</li>
+            <li></li>
+        </ul>
+        <p class="instrumental">史密森尼国家自然博物馆：顾脊椎动...</p>
+        <div class="matter">
+        	<img src="img/center_2.png" alt=""/>
+            <div>
+            	<div>好久没逛果壳了，偶然发现了Baboon老师关于NMNH的帖子。因为过去多次，看</div>
+            </div>
+        </div>
+
+        
+    </section>
+    <section class="center">
+    	<ul class="center-result">
+        	<li class="black first">#TIL#有的母螳螂会用美色诱杀其...</li>
+            <li class="black">艾森彗星T-18小时：绝地反击！</li>
+        	<li class="black">[ISON]我儿，老大哥在看着你</li>
+            <li class="black">【天文每日一图】NGC1999:...</li>
+            <li class="black blue center-foot"><span></span>回到顶部</li>
+        </ul>
+    </section>
+    <footer class="hd-login footer">
+		<span class="gray gray2"><i class="log2"></i>PC版</span>
+        <span class="gray gray-none"><i class="sign2"></i>移动应用</span>        
+    </footer>
+
+</div>
+</body>
+</html>
